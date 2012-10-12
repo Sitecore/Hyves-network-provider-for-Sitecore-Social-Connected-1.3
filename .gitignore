@@ -1,0 +1,9 @@
+.svn
+.bin
+*.obj
+*.exe
+*.pdb
+*.suo
+*.ncb
+*.ncrunchproject
+*.csproj.*
