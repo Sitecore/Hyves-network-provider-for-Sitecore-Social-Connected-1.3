@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CBE2293A-2FE9-40D7-8B10-9903F66A6F44}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Hyves</RootNamespace>
+    <AssemblyName>BeeNET</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Constants.cs" />
+    <Compile Include="AlbumsService.cs" />
+    <Compile Include="BuzzService.cs" />
+    <Compile Include="HyvesEventResponsefield.cs" />
+    <Compile Include="HyvesEventPrecenseVisibility.cs" />
+    <Compile Include="Entities\Event.cs" />
+    <Compile Include="EventsService.cs" />
+    <Compile Include="HyvesWwwResponsefield.cs" />
+    <Compile Include="Entities\Smiley.cs" />
+    <Compile Include="Entities\SmileyCategory.cs" />
+    <Compile Include="HyvesTipResponsefield.cs" />
+    <Compile Include="HyvesThreadResponsefield.cs" />
+    <Compile Include="Entities\Thread.cs" />
+    <Compile Include="ThreadsService.cs" />
+    <Compile Include="Entities\SearchResultItem.cs" />
+    <Compile Include="Entities\SearchResult.cs" />
+    <Compile Include="HyvesSearchCategory.cs" />
+    <Compile Include="SearchService.cs" />
+    <Compile Include="HyvesPrivateSpotResponsefield.cs" />
+    <Compile Include="Entities\PingType.cs" />
+    <Compile Include="Entities\Spotted.cs" />
+    <Compile Include="HyvesMediaType.cs" />
+    <Compile Include="Entities\OpeningHour.cs" />
+    <Compile Include="Entities\HubCategory.cs" />
+    <Compile Include="HubsService.cs" />
+    <Compile Include="HyvesGadgetResponsefield.cs" />
+    <Compile Include="HyvesUserType.cs" />
+    <Compile Include="HyvesBuzzAction.cs" />
+    <Compile Include="Entities\Creator.cs" />
+    <Compile Include="HyvesEntityType.cs" />
+    <Compile Include="Entities\Buzz.cs" />
+    <Compile Include="Entities\BuzzTarget.cs" />
+    <Compile Include="HyvesBuzzResponsefield.cs" />
+    <Compile Include="HyvesBlogResponsefield.cs" />
+    <Compile Include="HyvesTimeSpan.cs" />
+    <Compile Include="HyvesSortType.cs" />
+    <Compile Include="HyvesUserSortType.cs" />
+    <Compile Include="Entities\HubAddress.cs" />
+    <Compile Include="HyvesAlbumResponsefield.cs" />
+    <Compile Include="Core\EnumHelper.cs" />
+    <Compile Include="Entities\Album.cs" />
+    <Compile Include="Entities\City.cs" />
+    <Compile Include="CityService.cs" />
+    <Compile Include="AuthenticationService.cs" />
+    <Compile Include="Entities\Blog.cs" />
+    <Compile Include="BlogsService.cs" />
+    <Compile Include="Entities\Comment.cs" />
+    <Compile Include="Entities\UploadToken.cs" />
+    <Compile Include="Entities\GroupStats.cs" />
+    <Compile Include="HyvesHubResponsefield.cs" />
+    <Compile Include="Entities\Hub.cs" />
+    <Compile Include="HubCategoriesService.cs" />
+    <Compile Include="HyvesSortOrder.cs" />
+    <Compile Include="HyvesUserPrivateResponsefield.cs" />
+    <Compile Include="MessagesService.cs" />
+    <Compile Include="Entities\PrivateSpots.cs" />
+    <Compile Include="PrivateSpotsService.cs" />
+    <Compile Include="HyvesMediaResponsefield.cs" />
+    <Compile Include="Entities\Geolocation.cs" />
+    <Compile Include="Entities\HyvesPaginatedEntity.cs" />
+    <Compile Include="Entities\Testimonial.cs" />
+    <Compile Include="Entities\Scrap.cs" />
+    <Compile Include="Entities\TipCategory.cs" />
+    <Compile Include="TipsService.cs" />
+    <Compile Include="Entities\Tip.cs" />
+    <Compile Include="Entities\Ping.cs" />
+    <Compile Include="HyvesPingResponsefield.cs" />
+    <Compile Include="PingsService.cs" />
+    <Compile Include="Entities\Friendinvitation.cs" />
+    <Compile Include="Entities\Respect.cs" />
+    <Compile Include="HyvesRespectType.cs" />
+    <Compile Include="HyvesUserResponsefield.cs" />
+    <Compile Include="HyvesListenerType.cs" />
+    <Compile Include="Entities\Listener.cs" />
+    <Compile Include="ListenersService.cs" />
+    <Compile Include="Core\HyvesExpirationType.cs" />
+    <Compile Include="HyvesPaginateInformation.cs" />
+    <Compile Include="Core\HyvesMethod.cs" />
+    <Compile Include="RegionService.cs" />
+    <Compile Include="Entities\Region.cs" />
+    <Compile Include="LayoutType.cs" />
+    <Compile Include="FancyLayoutService.cs" />
+    <Compile Include="CountryService.cs" />
+    <Compile Include="WwwsService.cs" />
+    <Compile Include="GadgetsService.cs" />
+    <Compile Include="Core\OAuthBase.cs" />
+    <Compile Include="Entities\Country.cs" />
+    <Compile Include="Entities\Www.cs" />
+    <Compile Include="HyvesVisibility.cs" />
+    <Compile Include="Entities\Gadget.cs" />
+    <Compile Include="Entities\MediaType.cs" />
+    <Compile Include="Entities\MediaItem.cs" />
+    <Compile Include="Entities\Media.cs" />
+    <Compile Include="Entities\Distance.cs" />
+    <Compile Include="MediaService.cs" />
+    <Compile Include="FriendsService.cs" />
+    <Compile Include="Entities\HyvesEntity.cs" />
+    <Compile Include="Core\HyvesInfiniteSession.cs" />
+    <Compile Include="Core\HyvesRequest.cs" />
+    <Compile Include="Core\HyvesRequestParameterList.cs" />
+    <Compile Include="Core\HyvesResponse.cs" />
+    <Compile Include="Core\HyvesResponseStatus.cs" />
+    <Compile Include="Core\HyvesSession.cs" />
+    <Compile Include="HyvesService.cs" />
+    <Compile Include="Core\IndentedTextWriter.cs" />
+    <Compile Include="Core\JsonObject.cs" />
+    <Compile Include="Core\JsonReader.cs" />
+    <Compile Include="Core\JsonWriter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Entities\User.cs" />
+    <Compile Include="Entities\UserGender.cs" />
+    <Compile Include="UsersService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Social.Hyves", "Sitecore.Social.Hyves\Sitecore.Social.Hyves.csproj", "{B1399B33-8F28-4D13-8FCE-C8E76227B980}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bee.NET", "Bee.NET", "{20CF7862-9110-468C-9575-2E51F54F3723}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework", "..\Bee.NET\Framework\Framework.csproj", "{CBE2293A-2FE9-40D7-8B10-9903F66A6F44}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B1399B33-8F28-4D13-8FCE-C8E76227B980}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1399B33-8F28-4D13-8FCE-C8E76227B980}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1399B33-8F28-4D13-8FCE-C8E76227B980}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1399B33-8F28-4D13-8FCE-C8E76227B980}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBE2293A-2FE9-40D7-8B10-9903F66A6F44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBE2293A-2FE9-40D7-8B10-9903F66A6F44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBE2293A-2FE9-40D7-8B10-9903F66A6F44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBE2293A-2FE9-40D7-8B10-9903F66A6F44}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CBE2293A-2FE9-40D7-8B10-9903F66A6F44} = {20CF7862-9110-468C-9575-2E51F54F3723}
+	EndGlobalSection
+EndGlobal
