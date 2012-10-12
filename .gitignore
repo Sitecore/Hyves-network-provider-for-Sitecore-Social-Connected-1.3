@@ -1,5 +1,6 @@
 .svn
 bin
+obj
 *.obj
 *.exe
 *.pdb
