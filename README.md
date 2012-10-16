@@ -2,6 +2,6 @@
  
 The source code demonstrates how to add supporting of new social network to Sitecore Social Connected 1.3.
  
-[Adding a New Social Network to the Social Connected Module]( https://github.com/downloads/Sitecore/Hyves-network-provider-for-Sitecore-Social-Connected-1.3/Adding_a_New_Social_Network_to_the_Social_Connected_Module-A4.pdf)
+[How to add a new social network](https://github.com/downloads/Sitecore/Hyves-network-provider-for-Sitecore-Social-Connected-1.3/Social_Connected_How_to_Add_a_New_Social_Network_13-A4.pdf)
  
 License : SITECORE SHARED SOURCE LICENSE
